@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./header-fondo.jpg);
+    background-size: 100%;
+}
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    color: white;
+    padding: 1rem;
+    
+    
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+header a{
+    color:white;
+    border-radius: 1rem;
+    border: 1px solid white;
+    text-decoration: none;
+    padding:.2rem;
+    
+    
+}
+.active{
+    background-color: white;
+    color: black;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+    height: 12rem;
+    width: 15rem;
+    padding:  0 1rem 1rem 1rem;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.474);
+    border-radius: 1rem;
+}
+.container__1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid white;
+    color: white;
+    height: 12rem;
+    width: 12rem;
+    padding:  1.5rem 1rem 1rem 1rem;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.474);
+}
+.container__1>h5{
+    display: flex;
+    align-self: center;
+    
+}
+section img{
+    height: 1rem;
+    width: 1rem;
+}
+section p{
+    color: white;
+}
+section div{
+    display: flex;
+}
+main{
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+footer{
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(165, 42, 42, 0.378);
+}
+footer img{
+    height: 4rem;
+    border-radius: 1rem;
+
+}
+footer form{
+    display: flex;
+    gap: 1rem;
+    color: white;
+
+}
+footer a{
+    background-color: white;
+    color: rgb(165, 42, 42);
+    padding: .6rem;
+    text-decoration: none;
+}
+@media (max-width: 1024px) and (min-width: 767px){
+
+  main{
+    width: 48rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+  }
+}
+@media (max-width: 766px) and (min-width: 546px){
+   
+    main{
+        max-width: 100vh;
+        max-height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        
+
+    }   
+    footer{
+        display: flex;
+        font-size: .5rem;
+        
+    }
+}
+@media (max-width: 545px) and (min-width: 425px){
+    h1{
+        font-size: 1.3rem;
+    }
+    main{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    footer{
+        display:none;
+    }
+}
